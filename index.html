@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Slideshow / Carousel</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1 class="title">Slide simples com Html, Css & JavaScript</h1>
+		</header>
+
+		<main>
+			<div class="slideshow-container">
+				<div class="slide-image fade">
+					<img src="./img/img1.jpg" />
+				</div>
+				<div class="slide-image fade">
+					<img src="./img/img2.jpg" />
+				</div>
+				<div class="slide-image fade">
+					<img src="./img/img3.jpg" />
+				</div>
+				<div class="controls">
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+				<div class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="social-media">
+				<div class="likedin">
+					<i class="fa-brands fa-linkedin font-size"></i>
+					<a
+						href="https://www.linkedin.com/in/renan-da-silva-8945441a8/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Renan da Silva</a
+					>
+				</div>
+				<div class="github">
+					<i class="fa-brands fa-github font-size"></i>
+					<a
+						href="https://github.com/r-manfredini"
+						target="_blank"
+						rel="noopener noreferrer"
+						>@r-manfredini</a
+					>
+				</div>
+			</div>
+			Feito com <i class="fa-solid fa-heart co"></i> by <b>Renan Silva</b>
+		</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
