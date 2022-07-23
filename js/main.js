@@ -3,6 +3,8 @@ let slideIndex = 1;
 let slides = document.querySelectorAll(".slide-image");
 let dots = document.querySelectorAll(".dot");
 
+const slideTime = setInterval(showSlidesAuto, 6000);
+
 showSlidesAuto();
 
 function showSlidesAuto() {
@@ -19,11 +21,12 @@ function showSlidesAuto() {
 	});
 	dots[slideIndexAuto - 1].className += " active";
 
-	setTimeout(showSlidesAuto, 5000);
+	// setTimeout(showSlidesAuto, 6000);
 }
 
 function plusSlides(n) {
 	showSlides((slideIndex += n));
+	clearInterval(slideTime);
 }
 
 function currentSlide(n) {
