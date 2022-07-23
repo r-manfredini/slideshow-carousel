@@ -3,10 +3,9 @@ let slideIndex = 1;
 let slides = document.querySelectorAll(".slide-image");
 let dots = document.querySelectorAll(".dot");
 
-const slideTime = setInterval(showSlidesAuto, 6000);
-
 showSlidesAuto();
 
+const slideTime = setInterval(showSlidesAuto, 6000);
 function showSlidesAuto() {
 	slides.forEach((slide) => {
 		slide.style.display = "none";
@@ -20,13 +19,10 @@ function showSlidesAuto() {
 		dot.className = dot.className.replace(" active", "");
 	});
 	dots[slideIndexAuto - 1].className += " active";
-
-	// setTimeout(showSlidesAuto, 6000);
 }
 
 function plusSlides(n) {
 	showSlides((slideIndex += n));
-	clearInterval(slideTime);
 }
 
 function currentSlide(n) {
